@@ -25,7 +25,7 @@ pipeline{
        stage('Release') {
  steps {
  sh '''
- oc project aromof-greetings
+ oc project swsdak-greetings
  oc start-build greeting-console --follow --wait
  '''
  }
