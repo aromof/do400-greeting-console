@@ -25,7 +25,7 @@ pipeline{
        stage('Release') {
  steps {
  sh '''
- oc project swsdak-jenkins
+ oc project aromo-jenkins
  oc start-build greeting-console --follow --wait
  '''
  }
